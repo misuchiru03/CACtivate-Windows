@@ -1,0 +1,2 @@
+﻿# A script to help automate the Windows Activation Process when dealing with Smart Card certs (such as DoD/Government agencies)
+slmgr.vbs /fta (Get-ChildItem -path cert:\currentuser\My | Select-Object Thumbprint | Select-Object -First 1 -ExpandProperty Thumbprint)
